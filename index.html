@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<form id="myForm" action="#" method="post">
+    <table>
+        <tr>
+            <td>ФИО</td>
+            <td>
+                <input name="fio" type="text" placeholder="Фамилия Имя Отчество">
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <input name="email" type="text" placeholder="@">
+            </td>
+        </tr>
+        <tr>
+            <td>Телефон</td>
+            <td>
+                <input name="phone" type="text" placeholder="+7(999)999-99-99">
+            </td>
+        </tr>
+    </table>
+
+    <input type="button" id="submitButton" onclick="MyForm.submit(this.form)" value="Проверить">
+</form>
+
+
+<div id="resultContainer"></div>
+
+</body>
+<script src="./index.js"></script>
+</html>
